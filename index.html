@@ -37,13 +37,14 @@
         <p class="par"><strong> Purity:</strong> The product is made with clean, safe, and effective ingredients. <br> <strong>Thorough Cleaning:</strong> It promises excellent cleaning performance, <br> leaving surfaces, hands, or clothes fresh and spotless. <br>
             <strong> Freshness:</strong> A feeling of purity and freshness after using the product.
             </p>
-            <button class="cn"> <a href="#">Message Us </a></button>
+            <button onclick="alert('Thank you for messaging us')" class="cn"> <a href="#">Message Us </a></button>
 
+            <form id="myForm">
             <div class="form">
                 <h2>ORDER NOW!</h2>
                 <input type="email" name="email" placeholder="Enter Email Here">
                 <input type="password" name="password" placeholder="Enter password here">
-                <button class="btnn"><a href="#">Login</a></button>
+                <button class="btnn" onclick="submitForm()"><a href="#">Login</a></button>
 
                 <p class="link">Don't have an account <br>
                 <a href="#">Sign up </a> here</p>
@@ -58,10 +59,57 @@
 
                 </div>
             </div>
+        </form>
+       
+
         </div>
     </div>
+    <p id="message">Your information has been accepted!</p>
     <p><a href="new.html">Updated site</a></p>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
     
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        #message {
+            display: none; /* Hide message initially */
+            color: green;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+        
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <p id="message">Your information has been accepted!</p>
+
+    <script>
+        function submitForm() {
+            // Hide the form
+            document.getElementById("myForm").style.display = "none";
+            // Show the message
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html> -->
+
 </body>
 </html>

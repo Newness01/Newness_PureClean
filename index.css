@@ -267,6 +267,12 @@ color: rgb(238, 177, 9);
     color: rgb(238, 177, 9);
 }
 
+#message {
+    display: none; /* Hide message initially */
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+}
 
 
 
